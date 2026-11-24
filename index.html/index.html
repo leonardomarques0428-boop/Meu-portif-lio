@@ -2,10 +2,207 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Leonardo Marques -Portifólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Leonardo Marques Caetano, estudante de Desenvolvimento de Sistemas e desenvolvedor front-end.">
+  <title>Leonardo Marques Caetano | Desenvolvedor Front-end</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- 01 · CABEÇALHO -->
+  <header class="cabecalho">
+    <div class="container cabecalho__barra">
+      <a class="logo" href="#inicio">Leonardo Marques Caetano</a>
+
+      <button class="menu-botao" id="menu-botao" type="button" aria-expanded="false" aria-controls="menu">
+        Menu
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Navegação principal">
+        <ul class="menu__lista">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <button class="tema-botao" id="tema-botao" type="button" aria-pressed="false">
+          Tema escuro
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- 02 · INÍCIO -->
+    <section class="inicio" id="inicio" aria-labelledby="inicio-titulo">
+      <div class="container inicio__grade">
+        <div class="inicio__texto">
+          <p class="inicio__ola">Olá, eu sou</p>
+          <h1 id="inicio-titulo">Leonardo Marques Caetano</h1>
+          <p class="inicio__area">Desenvolvedor Front-end</p>
+          <p class="inicio__frase">
+            Transformo ideias em páginas web claras e funcionais.
+            Estou buscando uma vaga de estágio para crescer na área.
+          </p>
+          <div class="inicio__botoes">
+            <a class="botao botao--cheio" href="#projetos">Ver projetos</a>
+            <a class="botao botao--vazado" href="#contato">Baixar currículo</a>
+          </div>
+        </div>
+        <img class="inicio__foto" src="imagens/foto.svg" alt="Foto de perfil de Leonardo Marques Caetano (imagem ilustrativa)" width="360" height="360">
+      </div>
+    </section>
+
+    <!-- 03 · SOBRE MIM -->
+    <section class="sobre" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container sobre__grade">
+        <img class="sobre__imagem" src="imagens/sobre.svg" alt="Ilustração de um computador com código na tela" width="400" height="460">
+        <div class="sobre__texto">
+          <h2 id="sobre-titulo">Sobre mim</h2>
+          <p>
+            Sou Leonardo, estudante do curso técnico de Desenvolvimento de Sistemas.
+            Gosto de criar sites e pequenos sistemas, e de ver uma ideia sair do papel
+            e funcionar no navegador.
+          </p>
+          <p>
+            Hoje estudo HTML, CSS, JavaScript e Git, e uso o GitHub para registrar
+            cada passo do que construo. Meu objetivo é conseguir um estágio ou uma vaga
+            de desenvolvedor júnior para aprender com um time de verdade.
+          </p>
+          <dl class="sobre__dados">
+            <div><dt>Localização:</dt> <dd>Goiás, Brasil</dd></div>
+            <div><dt>Formação:</dt> <dd>Técnico em Desenvolvimento de Sistemas</dd></div>
+            <div><dt>Interesses:</dt> <dd>programação, tecnologia, games</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · HABILIDADES -->
+    <section class="habilidades" id="habilidades" aria-labelledby="habilidades-titulo">
+      <div class="container">
+        <h2 id="habilidades-titulo">Habilidades</h2>
+        <p class="secao__intro">Linguagens e ferramentas que uso nos meus projetos.</p>
+        <ul class="habilidades__lista">
+          <li class="cartao-habilidade"><span class="cartao-habilidade__icone" aria-hidden="true">H5</span> HTML5</li>
+          <li class="cartao-habilidade"><span class="cartao-habilidade__icone" aria-hidden="true">C3</span> CSS3</li>
+          <li class="cartao-habilidade"><span class="cartao-habilidade__icone" aria-hidden="true">JS</span> JavaScript</li>
+          <li class="cartao-habilidade"><span class="cartao-habilidade__icone" aria-hidden="true">Gt</span> Git</li>
+          <li class="cartao-habilidade"><span class="cartao-habilidade__icone" aria-hidden="true">Gh</span> GitHub</li>
+          <li class="cartao-habilidade"><span class="cartao-habilidade__icone" aria-hidden="true">Rs</span> Layout responsivo</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 05 · PROJETOS -->
+    <section class="projetos" id="projetos" aria-labelledby="projetos-titulo">
+      <div class="container">
+        <h2 id="projetos-titulo">Projetos</h2>
+        <p class="secao__intro">Trabalhos do curso e projetos que estou desenvolvendo.</p>
+
+        <div class="projetos__grade">
+          <article class="projeto">
+            <img src="imagens/projeto1.svg" alt="Captura de tela do projeto AgroLog" width="400" height="240">
+            <div class="projeto__corpo">
+              <h3>AgroLog</h3>
+              <p>Sistema de logística agrícola feito no curso. Aprendi a organizar telas, tabelas e formulários.</p>
+              <ul class="tags">
+                <li>HTML</li><li>CSS</li><li>JS</li>
+              </ul>
+              <p class="projeto__links">
+                <a href="#" aria-label="Ver o projeto AgroLog">Ver projeto</a>
+                <a href="#" aria-label="Ver o código do AgroLog">Código</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="projeto">
+            <img src="imagens/projeto2.svg" alt="Captura de tela deste portfólio" width="400" height="240">
+            <div class="projeto__corpo">
+              <h3>Meu portfólio</h3>
+              <p>Este site, com layout responsivo e tema claro/escuro. Aprendi Flexbox, Grid e manipulação do DOM.</p>
+              <ul class="tags">
+                <li>HTML</li><li>CSS</li><li>JS</li>
+              </ul>
+              <p class="projeto__links">
+                <a href="#" aria-label="Ver o projeto Meu portfólio">Ver projeto</a>
+                <a href="#" aria-label="Ver o código do Meu portfólio">Código</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="projeto">
+            <img src="imagens/projeto3.svg" alt="Esboço do projeto Lista de tarefas, em andamento" width="400" height="240">
+            <div class="projeto__corpo">
+              <h3>Lista de tarefas <span class="selo">em andamento</span></h3>
+              <p>App simples para adicionar e concluir tarefas. Vou praticar eventos e listas em JavaScript.</p>
+              <ul class="tags">
+                <li>HTML</li><li>CSS</li><li>JS</li>
+              </ul>
+              <p class="projeto__links">
+                <a href="#" aria-label="Ver o projeto Lista de tarefas">Ver projeto</a>
+                <a href="#" aria-label="Ver o código da Lista de tarefas">Código</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 · CONTATO -->
+    <section class="contato" id="contato" aria-labelledby="contato-titulo">
+      <div class="container contato__grade">
+        <div class="contato__texto">
+          <h2 id="contato-titulo">Vamos conversar?</h2>
+          <p>Estou aberto a estágio, freelas e parcerias. Escreva para mim pelo formulário ou pelos links abaixo.</p>
+          <ul class="contato__links">
+            <li><strong>E-mail:</strong> <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/seu-perfil">linkedin.com/in/seu-perfil</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/leonardomarques0428-boop">github.com/leonardomarques0428-boop</a></li>
+          </ul>
+        </div>
+
+        <form class="formulario" id="formulario" novalidate>
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+            <p class="campo__erro" id="erro-nome" role="alert"></p>
+          </div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <p class="campo__erro" id="erro-email" role="alert"></p>
+          </div>
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            <p class="campo__erro" id="erro-mensagem" role="alert"></p>
+          </div>
+          <button class="botao botao--cheio" type="submit">Enviar mensagem</button>
+          <p class="formulario__status" id="formulario-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 07 · RODAPÉ -->
+  <footer class="rodape">
+    <div class="container rodape__barra">
+      <p>© <span id="ano">2026</span> Leonardo Marques Caetano. Feito com HTML, CSS e JavaScript.</p>
+      <ul class="rodape__links">
+        <li><a href="https://github.com/leonardomarques0428-boop">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/seu-perfil">LinkedIn</a></li>
+        <li><a href="mailto:seuemail@exemplo.com">E-mail</a></li>
+      </ul>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
